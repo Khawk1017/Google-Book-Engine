@@ -31,14 +31,6 @@ mutation saveBook($content: BookContent!) {
         _id
         username
         email
-        savedBooks {
-            title
-            bookId
-            authors
-            image
-            description
-            link
-            }
         }
     }
 `;
@@ -50,14 +42,7 @@ mutation removeBook($bookId: ID!) {
         username
         email
         bookCount
-        savedBooks {
-            title
-            bookId
-            authors
-            image
-            description
-            link
-            }
+       
         }
     }
 `;
