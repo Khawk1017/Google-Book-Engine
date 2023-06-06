@@ -15,6 +15,7 @@ type User {
     username: String
     email: String
     bookCount: Int
+    SavedBooks[Book]
 }
 
 type Auth {
