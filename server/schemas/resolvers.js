@@ -9,7 +9,7 @@ const resolvers = {
                 const user = await User.findOne({ _id: context.user._id}).select(
                     "-__v -password"
                 );
-
+                console.log(user)
                 return user;
             }
             throw new AuthenticationError("You need to be logged in");
